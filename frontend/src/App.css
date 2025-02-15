@@ -3,3 +3,42 @@
   justify-content: center;
 }
 
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-container label {
+  font-weight: bold;
+}
+
+.input-container input {
+  margin-top: .5rem;
+  /* margin-bottom: .5rem; */
+  height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.input-container.has-error input {
+  border-color: red;
+}
+
+.input-container.has-error span {
+  color: red;
+}
+
+.users-list {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: aliceblue;
+}
+.users-list table {
+  /* table-layout: fixed; */
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  gap: .5rem;
+}
