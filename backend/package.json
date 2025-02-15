@@ -8,11 +8,11 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "docker:up": "docker-compose up",
-    "docker:down": "docker-compose down",
-    "docker:test": "docker-compose run backend sh -c cd /app &&  npm run test",
-    "docker:test:watch": "docker-compose run backend sh -c cd /app &&  npm run test:watch",
-    "docker:lint": "docker-compose run backend sh -c cd /app &&  npm run lint",
+    "docker:up": "docker compose up",
+    "docker:down": "docker compose down",
+    "docker:test": "docker compose run backend sh -c cd /app &&  npm run test",
+    "docker:test:watch": "docker compose run backend sh -c cd /app &&  npm run test:watch",
+    "docker:lint": "docker compose run backend sh -c cd /app &&  npm run lint",
     "lint": "eslint --ignore-pattern '**/node_modules/*' ./ --fix",
     "test": "./node_modules/mocha/bin/mocha 'test/**/*.js'",
     "test:watch": "./node_modules/mocha/bin/mocha 'test/**/*.js' --watch"
